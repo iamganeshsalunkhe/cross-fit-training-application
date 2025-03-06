@@ -1,5 +1,11 @@
+const Workout = require('../database/Workout');
+
+// name the service method same as the controller method
+
 const getAllWorkouts = ()=>{
-    return;
+    const allWorkouts = Workout.getAllWorkouts();
+
+    return allWorkouts;
 };
 
 const getOneWorkout = ()=>{
