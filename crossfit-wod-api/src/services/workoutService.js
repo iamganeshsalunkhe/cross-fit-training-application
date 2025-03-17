@@ -3,9 +3,9 @@ const {v4:uuid}= require('uuid');
 
 // name the service method same as the controller method
 
-const getAllWorkouts = ()=>{
+const getAllWorkouts = (filterParams)=>{
     try {
-        const allWorkouts = Workout.getAllWorkouts();
+        const allWorkouts = Workout.getAllWorkouts(filterParams);
         
         return allWorkouts;
     } catch (error) {
